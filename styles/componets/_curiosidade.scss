@@ -1,0 +1,50 @@
+@import '../abstracts/var';
+
+@mixin bg-gradiente($cores...){
+    background: linear-gradient(to bottom, $cores)
+}
+
+.curiosidade{
+    @include bg-gradiente($cor-terceiaria, $cor-secundaria);
+    display: flex;
+    padding: 3em 5em 7em 5em;
+    align-items: center;
+    gap: 1em;
+    img{
+        width: 120%;
+        border-bottom: 5px solid $cor-secundaria;
+        border-radius: 50% 60% 70% 80%;
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+        transition: 2s ease;
+        z-index: 1;
+    }
+    .texto-curiosidade{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        .titulo-spa{
+            color: black;
+            font-family: $fonte-Secundaria;
+            font-size: calc($tamanho-fonte-principal * 3.5);
+        }
+        h3{
+            font-size: $tamanho-fonte-principal;
+            color: black;
+            font-weight: bold;
+            
+        }
+        h4{
+            font-size: calc($tamanho-fonte-principal / 1.5);
+            color: black;
+            font-weight: bold;
+            padding-left: 1em;
+        }
+        p{
+            font-size: calc($tamanho-fonte-principal / 2);
+            color: black;
+            font-weight: bold;
+            padding-left: 4em;
+        }
+    }
+}

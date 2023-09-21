@@ -1,0 +1,207 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+  background-color: #FBF0B2;
+}
+
+nav {
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  padding: 1em;
+}
+nav li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #004225;
+  transition: 0.3s ease-in-out;
+}
+nav li a:hover {
+  border-bottom: 2px solid #004225;
+  font-size: 1.3043478261em;
+  transition: 0.5s ease-in-out;
+}
+
+.banner {
+  background: url("/imagens/banner.jpeg") 27% center no-repeat;
+  min-height: 350px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+.banner .inner_banner {
+  padding: 1em;
+}
+.banner .inner_banner h1 {
+  color: #FFB000;
+  font-family: "Cinzel", sans-serif;
+  font-size: 3em;
+}
+.banner .inner_banner h2 {
+  color: #F5F5DC;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+}
+
+#servicos {
+  margin: 80px;
+}
+#servicos h3 {
+  font-size: 1.2em;
+  color: #004225;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1em;
+}
+#servicos h4 {
+  font-size: 2.7272727273em;
+  color: #FFB000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 80px;
+}
+#servicos .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+#servicos .cards .card {
+  display: flex;
+  width: 390px;
+  flex-direction: column;
+  margin-bottom: 1.3em;
+  align-items: center;
+  z-index: 1;
+}
+#servicos .cards .card img {
+  max-width: 100%;
+  border-bottom: 3px solid #004225;
+  border-radius: 50% 75%;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  transition: 2s ease;
+  z-index: 1;
+}
+#servicos .cards .card img:hover {
+  max-width: 100%;
+  border-radius: 5px;
+  z-index: 2;
+  transition: 1s ease;
+}
+#servicos .cards .card h5 {
+  font-size: 1.5em;
+  color: #004225;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#servicos .cards .card p {
+  font-size: 1em;
+  color: #004225;
+  font-weight: bold;
+  line-height: 1.25rem;
+}
+
+#input-section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: #FFB000;
+  padding: 5rem;
+}
+#input-section h2 {
+  color: #004225;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7647058824em;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+#input-section input {
+  border: 2px solid #004225;
+  font-size: 1em;
+  border-radius: 50px;
+  padding: 8px 1em;
+  background-color: #FFB000;
+  color: #004225;
+  margin-bottom: 1.5em;
+  width: 500px;
+  transition: 0.5s ease;
+}
+#input-section input:hover, #input-section input:focus-within {
+  background-color: #F5F5DC;
+  box-shadow: 1px 1px 4px 1px;
+  padding: 9px 3em;
+  outline: none;
+  transition: 1s ease;
+}
+#input-section button {
+  background-color: #004225;
+  font-size: 1em;
+  color: #F5F5DC;
+  padding: 5px 10px;
+  border: 1px solid #004225;
+  border-radius: 20px 5px 20px 5px;
+  transition: 0.5s ease;
+}
+#input-section button:hover {
+  transition: 0.3s ease;
+  border-radius: 5px 20px 5px 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.25em;
+  padding: 1em;
+  background: #004225;
+}
+footer i {
+  color: #004225;
+}
+
+.curiosidade {
+  background: linear-gradient(to bottom, #FFB000, #004225);
+  display: flex;
+  padding: 3em 5em 7em 5em;
+  align-items: center;
+  gap: 1em;
+}
+.curiosidade img {
+  width: 120%;
+  border-bottom: 5px solid #004225;
+  border-radius: 50% 60% 70% 80%;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  transition: 2s ease;
+  z-index: 1;
+}
+.curiosidade .texto-curiosidade {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.curiosidade .texto-curiosidade .titulo-spa {
+  color: black;
+  font-family: "Cinzel", sans-serif;
+  font-size: 10.5em;
+}
+.curiosidade .texto-curiosidade h3 {
+  font-size: 3em;
+  color: black;
+  font-weight: bold;
+}
+.curiosidade .texto-curiosidade h4 {
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+  padding-left: 1em;
+}
+.curiosidade .texto-curiosidade p {
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  padding-left: 4em;
+}/*# sourceMappingURL=style.css.map */

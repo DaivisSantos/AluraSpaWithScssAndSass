@@ -1,0 +1,24 @@
+@import '../abstracts/var';
+
+.banner{
+    background: url('/imagens/banner.jpeg') 27% center no-repeat;
+    min-height: 350px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    .inner_banner{
+        padding: 1em;
+        h1{
+            color: $cor-terceiaria;
+            font-family: $fonte-Secundaria;
+            font-size: $tamanho-fonte-principal;
+        }
+        h2{
+            color: $cor-primaria;
+            font-family: $fonte;
+            font-size: calc($tamanho-fonte-principal / 2.5);
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import '../abstracts/var';
+
+
+
+#input-section{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: $cor-terceiaria;
+    padding: 5rem;
+    h2{
+        color: $cor-secundaria;
+        font-family: $fonte;
+        font-size: calc($tamanho-fonte-principal / 1.7);
+        font-weight: 500;
+        margin-bottom: 1.5em; 
+    }
+    input{
+        border: 2px solid $cor-secundaria;
+        font-size: calc($tamanho-fonte-principal / 3);
+        border-radius: 50px;
+        padding: 8px 1em;
+        background-color: $cor-terceiaria;
+        color: $cor-secundaria;
+        margin-bottom: 1.5em;
+        width: 500px;
+        transition: 0.5s ease;
+        &:hover, &:focus-within{
+            background-color: $cor-primaria;
+            box-shadow: 1px 1px 4px 1px ;
+            padding: 9px 3em;
+            outline: none;
+            transition: 1s ease;
+        }
+    }
+    button{
+        background-color: $cor-secundaria;
+        font-size: calc($tamanho-fonte-principal / 3);
+        color: $cor-primaria;
+        padding: 5px 10px;
+        border: 1px solid $cor-secundaria;
+        border-radius: 20px 5px 20px 5px;
+        transition: 0.5s ease;
+        &:hover{
+            transition: 0.3s ease;
+            border-radius: 5px 20px 5px 20px;
+        }
+    }
+}
