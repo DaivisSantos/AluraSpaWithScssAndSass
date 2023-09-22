@@ -1,6 +1,7 @@
 html, body {
   font-family: "Roboto", sans-serif;
   background-color: #FBF0B2;
+  scroll-behavior: smooth;
 }
 
 nav {
